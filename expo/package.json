@@ -1,0 +1,28 @@
+{
+	"name": "expo-app",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "bunx expo start --dev-client",
+		"ios": "expo run:ios",
+		"android": "expo run:android",
+		"rebuild": "rm -rf ios android && bunx expo prebuild"
+	},
+	"expo": {
+		"autolinking": {
+			"searchPaths": [
+				"../packages",
+				"../node_modules",
+				"../../node_modules"
+			],
+			"nativeModulesDir": "../packages"
+		}
+	},
+	"dependencies": {
+		"expo": "~53.0.0",
+		"expo-build-properties": "~0.14.0",
+		"expo-dev-client": "~5.1.0",
+		"react": "~19.0.0",
+		"react-native": "0.79.4",
+		"src": "workspace:*"
+	}
+}

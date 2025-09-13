@@ -1,0 +1,14 @@
+{
+	"name": "react-native-monorepo-boilerplate",
+	"workspaces": [
+		"expo",
+		"src",
+		"packages/*"
+	],
+	"scripts": {
+		"reinstall": "rm -drf node_modules expo/node_modules && rm -f bun.lockb && bun install"
+	},
+	"overrides": {
+		"react": "~19.0.0"
+	}
+}
