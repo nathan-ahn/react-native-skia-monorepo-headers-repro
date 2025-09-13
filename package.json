@@ -9,6 +9,6 @@
 		"reinstall": "rm -drf node_modules expo/node_modules && rm -f bun.lockb && bun install"
 	},
 	"overrides": {
-		"react": "~19.0.0"
+		"react": "~19.1.0"
 	}
 }
